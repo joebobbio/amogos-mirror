@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Your so sussy -->
+<html lang="en">
+    <head>
+        <title>AmogOS Mirror</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=0, initial-scale=1,minimum-scale=1, maximum-scale=1, width=device-width, minimal-ui=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta content="AmogOS Mirror" property="og:site_name">
+        <style>
+        body{
+            background-color: #2c2f33;
+            color: white;
+            text-decoration: none;
+            text-align:center;
+            font-size: large;
+        }
+        .header{
+            font-size: xx-large;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .yea{
+            text-decoration: underline;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>AmogOS Mirror</h1>
+        </div>
+        <p>Choose the download you'd like.</p>
+        <h2>Supported</h2>
+        Latest AmogOS for x86_64 PCs
+        <br>
+        <a href="https://storage.phene.dev/amogos/x86_64">HTTP download</a> - <a href="#" id="ariax86">aria2c download</a>
+        <script> 
+            document.getElementById("ariax86")
+            .onclick = function() {
+                navigator.clipboard.writeText("aria2c -x2 https://storage.phene.dev/amogos-x86_64.iso")
+                .then(() => {
+                    alert("aria2c command copied to clipboard");
+                })
+                .catch(err => {
+                    alert("Something went wrong and that didn't work. Try again.")
+                })
+            }
+        </script>
+        <br>
+        <br>
+        Latest AmogOS for x86_64 PCs (manual installation)
+        <br>
+        <a href="https://storage.phene.dev/amogos/x86_64-manual">HTTP download</a> - <a href="#" id="ariax86man">aria2c download</a>
+        <script> 
+            document.getElementById("ariax86man")
+            .onclick = function() {
+                navigator.clipboard.writeText("aria2c -x2 https://storage.phene.dev/amogos-x86_64-MANUAL.zip")
+                .then(() => {
+                    alert("aria2c command copied to clipboard");
+                })
+                .catch(err => {
+                    alert("Something went wrong and that didn't work. Try again.")
+                })
+            }
+        </script>
+        <br>
+        <br>
+        Latest AmogDOS <div class="yea">(<a href="https://github.com/jostroOS/AmogDOS#amogdos">what?</a>)</div>
+        <a href="https://storage.phene.dev/amogos/amogdos">HTTP download</a> - <a href="#" id="amogdos">aria2c download</a>
+        <script> 
+            document.getElementById("amogdos")
+            .onclick = function() {
+                navigator.clipboard.writeText("aria2c -x2 https://storage.phene.dev/HOME-Milestone-1.tar.xz")
+                .then(() => {
+                    alert("aria2c command copied to clipboard.\n*Please* read the installation notes @ https://github.com/jostroOS/AmogDOS/releases/tag/0.1 before installing.");
+                })
+                .catch(err => {
+                    alert("Something went wrong and that didn't work. Try again.")
+                })
+            }
+        </script>
+        <br>
+        <br>
+        <h2>Unsupported</h2>
+        Latest AmogOS for Raspberry Pi 
+        <br>
+        <a href="https://storage.phene.dev/amogos/pi">HTTP download</a> - <a href="#" id="ariapi">aria2c download</a>
+        <script>
+            document.getElementById("ariapi")
+            .onclick = function() {
+                navigator.clipboard.writeText("aria2c -x2 https://storage.phene.dev/amogOSv1-6-0.img.xz")
+                .then(() => {
+                    alert("aria2c command copied to clipboard");
+                })
+                .catch(err => {
+                    alert("Something went wrong and that didn't work. Try again.")
+                })
+            }
+        </script> 
+        <p></p>
+        <div class="footer">
+            <small>Need help with the mirror? Contact me at <a href="mailto:phene@phene.dev">phene@phene.dev</a>. <br>
